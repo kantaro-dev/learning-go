@@ -1,44 +1,25 @@
 package main
 
-import (
-	"log"
-	"time"
-)
+import "log"
 
-// var s = "seven"
+type myStruct struct {
+	FirstName string
+}
 
-// var firstName string
-// var lastName string
-// var phoneNumber string
-// var age int
-// var birthDate time.Time
-
-type User struct {
-	FirstName   string
-	LastName    string
-	PhoneNumber string
-	Age         int
-	BirthDate   time.Time
+func (m *myStruct) printFirstName() string {
+	return m.FirstName
 }
 
 func main() {
-	// var s2 = "six"
+	var myVar myStruct
+	myVar.FirstName = "John"
 
-	// log.Println("s is", s)
-	// log.Println("s2 is", s2)
-
-	// saySomething("xxx")
-
-	user := User{
-		FirstName:   "Blaise",
-		LastName:    "Pascal",
-		PhoneNumber: "123-456-7890",
+	myVar2 := myStruct{
+		FirstName: "Mary",
 	}
 
-	log.Println(user.FirstName, user.LastName, "BirthDate:", user.BirthDate)
+	// log.Println("myVar is set to", myVar.FirstName)
+	// log.Println("myVar2 is set to", myVar2.FirstName)
+	log.Println("myVar is set to", myVar.printFirstName())
+	log.Println("myVar2 is set to", myVar2.printFirstName())
 }
-
-// func saySomething(s3 string) (string, string) {
-// 	log.Println("s from the saySomething func is", s)
-// 	return s3, "World"
-// }
