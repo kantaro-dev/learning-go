@@ -2,66 +2,52 @@ package main
 
 import "log"
 
-// import "sort"
-
-// type User struct {
-// 	FirstName string
-// 	LastName  string
-// }
-
 func main() {
-	// myMap := make(map[string]string)
+	// var isTrue bool
+	// isTrue = false
 
-	// myMap["dog"] = "Samson"
-	// myMap["other-dog"] = "Cassie"
-	// myMap["dog"] = "Fido"
-
-	// log.Println(myMap["dog"])
-	// log.Println(myMap["other-dog"])
-
-	// myMap := make(map[string]int)
-
-	// myMap["First"] = 1
-	// myMap["Second"] = 2
-
-	// log.Println(myMap["First"], myMap["Second"])
-
-	// myMap := make(map[string]User)
-
-	// me := User{
-	// 	FirstName: "Rene",
-	// 	LastName:  "Descartes",
+	// if isTrue == true {
+	// 	log.Println("isTrue is", isTrue)
+	// } else {
+	// 	log.Println("isTrue is", isTrue)
 	// }
 
-	// myMap["me"] = me
-	// log.Println(myMap["me"].FirstName)
+	// cat := "cat2"
 
-	// var mySlice []string
+	// if cat == "cat" {
+	// 	log.Println("Cat is cat")
+	// } else {
+	// 	log.Println("Cat is not cat")
+	// }
 
-	// mySlice = append(mySlice, "Rene")
-	// mySlice = append(mySlice, "George")
-	// mySlice = append(mySlice, "Alfred")
+	// myNum := 100
+	// isTrue := false
 
-	// log.Println(mySlice)
+	// if myNum > 99 && !isTrue {
+	// 	log.Println("myNum is greater than 99 and isTrue is set to true")
+	// } else if myNum < 100 && isTrue {
+	// 	log.Println("1")
+	// } else if myNum == 101 || isTrue {
+	// 	log.Println("2")
+	// } else if myNum > 1000 && isTrue == false {
+	// 	log.Println("3")
+	// }
 
-	// var mySliceInt []int
+	myVar := "cat"
 
-	// mySliceInt = append(mySliceInt, 2)
-	// mySliceInt = append(mySliceInt, 1)
-	// mySliceInt = append(mySliceInt, 3)
+	switch myVar {
+	case "cat":
+		log.Println("myVar is set to cat")
 
-	// sort.Ints(mySliceInt)
+	case "dog":
+		log.Println("myVar is set to dog")
 
-	// log.Println(mySliceInt)
+	case "fish":
+		log.Println("myVar is set to fish")
 
-	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	default:
+		log.Println("myVar is something else")
 
-	log.Println(numbers)
+	}
 
-	log.Println(numbers[0:2])
-	log.Println(numbers[6:9])
-
-	names := []string{"one", "seven", "fish", "cat"}
-
-	log.Println(names)
 }
